@@ -25,3 +25,7 @@ This app was bootstrapped with `create-react-app`.
 - graphql-tag
 - apollo-boost
 - @apollo/react-hooks
+
+## Deploy
+
+https://andrewthamcc.github.io/context-vs-redux-vs-apollo/
