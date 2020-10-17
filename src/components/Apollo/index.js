@@ -15,7 +15,7 @@ import AddTodo from "../AddTodo";
 import TodoList from "../TodoList";
 
 const Apollo = () => {
-  const { data, loading } = useQuery(GET_TODOS);
+  const { data } = useQuery(GET_TODOS);
   const [addTodo] = useMutation(ADD_TODO);
   const [updateTodo] = useMutation(UPDATE_TODO);
   const [deleteTodo] = useMutation(DELETE_TODO);

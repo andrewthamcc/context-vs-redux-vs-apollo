@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // material ui
 import List from "@material-ui/core/List";
@@ -21,6 +22,18 @@ const TodoList = (props) => {
       ))}
     </List>
   );
+};
+
+TodoItem.PropTypes = {
+  todos: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      todo: PropTypes.string.isRequired,
+      complete: PropTypes.bool.isRequired,
+    })
+  ),
+  handleUpdate: PropTypes.func.isRequired,
+  handleDelete: PropTypes.func.isRequired,
 };
 
 export default TodoList;

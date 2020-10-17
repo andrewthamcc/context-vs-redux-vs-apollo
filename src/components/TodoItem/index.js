@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 // material ui
 import ListItem from "@material-ui/core/ListItem";
@@ -21,6 +22,16 @@ const TodoItem = (props) => {
       </ListItemIcon>
     </ListItem>
   );
+};
+
+TodoItem.propTypes = {
+  todo: PropTypes.shape({
+    id: PropTypes.number,
+    todo: PropTypes.string.isRequired,
+    complete: PropTypes.bool.isRequired,
+  }).isRequired,
+  handleUpdate: PropTypes.func.isRequired,
+  handleDelete: PropTypes.func.isRequired,
 };
 
 export default TodoItem;
