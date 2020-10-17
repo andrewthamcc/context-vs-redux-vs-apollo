@@ -1,13 +1,16 @@
-import ApolloClient, {InMemoryCache} from "apollo-boost"
-import initialState from "../GraphQL/initialState"
+import ApolloClient, { InMemoryCache } from "apollo-boost";
+import initialState from "../GraphQL/initialState";
+import TodoResolver from "../GraphQL/resolvers/todoResolver";
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   resolvers: {
-    Mutation: {}
-  }
-})
+    Mutation: {
+      ...TodoResolver,
+    },
+  },
+});
 
-client.writeData({data: {...initialState}})
+client.writeData({ data: { ...initialState } });
 
 export default client;
