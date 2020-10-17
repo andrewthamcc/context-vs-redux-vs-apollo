@@ -42,6 +42,7 @@ const AddTodo = (props) => {
             color="primary"
             disabled={todoText === ""}
             fullWidth
+            onCLick={(e) => handleSubmit(e)}
           >
             Add
           </Button>
