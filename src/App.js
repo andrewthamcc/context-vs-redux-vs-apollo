@@ -4,6 +4,9 @@ import client from "./ApolloClient"
 import { Provider } from "react-redux";
 import store from "./redux";
 
+// material-ui
+import Container from "@material-ui/core/Container"
+
 // components
 import Apollo from "./components/Apollo"
 import Redux from "./components/Redux"
@@ -13,8 +16,10 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <ApolloProvider client={client}>
-          <Apollo />
-          <Redux />
+          <Container maxWidth="md">
+            <Apollo />
+            <Redux />
+          </Container>
         </ApolloProvider>
       </Provider>
     </div>
