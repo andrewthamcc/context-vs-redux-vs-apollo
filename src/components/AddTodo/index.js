@@ -28,7 +28,7 @@ const AddTodo = (props) => {
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
       <Grid container spacing={1}>
-        <Grid item xs={8}>
+        <Grid item xs={9}>
           <TextField
             placeholder="to do..."
             value={todoText}
@@ -36,7 +36,7 @@ const AddTodo = (props) => {
             fullWidth
           />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <Button
             variant="outlined"
             color="primary"
