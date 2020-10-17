@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "96c18cfa0f446c4e6340c50b46b8d44c",
+    "revision": "d53003e361627a57a9afc0a658f5a130",
     "url": "/context-vs-redux-vs-apollo/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/context-vs-redux-vs-apollo/static/js/2.a35c52d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bb6f89e49e91c14f3f1",
-    "url": "/context-vs-redux-vs-apollo/static/js/main.270ac80c.chunk.js"
+    "revision": "198ba0d5549faeb35430",
+    "url": "/context-vs-redux-vs-apollo/static/js/main.e205c76a.chunk.js"
   },
   {
     "revision": "1c7d96d5eb292e6c2571",
