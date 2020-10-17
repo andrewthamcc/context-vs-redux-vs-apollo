@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/context-vs-redux-vs-apollo/static/js/main.e205c76a.chunk.js",
-    "main.js.map": "/context-vs-redux-vs-apollo/static/js/main.e205c76a.chunk.js.map",
+    "main.js": "/context-vs-redux-vs-apollo/static/js/main.480ddcbe.chunk.js",
+    "main.js.map": "/context-vs-redux-vs-apollo/static/js/main.480ddcbe.chunk.js.map",
     "runtime-main.js": "/context-vs-redux-vs-apollo/static/js/runtime-main.025dc148.js",
     "runtime-main.js.map": "/context-vs-redux-vs-apollo/static/js/runtime-main.025dc148.js.map",
     "static/js/2.a35c52d4.chunk.js": "/context-vs-redux-vs-apollo/static/js/2.a35c52d4.chunk.js",
     "static/js/2.a35c52d4.chunk.js.map": "/context-vs-redux-vs-apollo/static/js/2.a35c52d4.chunk.js.map",
     "index.html": "/context-vs-redux-vs-apollo/index.html",
-    "precache-manifest.49c464406659b6aedcae277b4956769d.js": "/context-vs-redux-vs-apollo/precache-manifest.49c464406659b6aedcae277b4956769d.js",
+    "precache-manifest.18a4f93c4f2075032b14da2869106b47.js": "/context-vs-redux-vs-apollo/precache-manifest.18a4f93c4f2075032b14da2869106b47.js",
     "service-worker.js": "/context-vs-redux-vs-apollo/service-worker.js",
     "static/js/2.a35c52d4.chunk.js.LICENSE.txt": "/context-vs-redux-vs-apollo/static/js/2.a35c52d4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.025dc148.js",
     "static/js/2.a35c52d4.chunk.js",
-    "static/js/main.e205c76a.chunk.js"
+    "static/js/main.480ddcbe.chunk.js"
   ]
 }
