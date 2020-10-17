@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c2d79fa3960a5fdf0bf38cec85d3b0c",
+    "revision": "96c18cfa0f446c4e6340c50b46b8d44c",
     "url": "/context-vs-redux-vs-apollo/index.html"
   },
   {
