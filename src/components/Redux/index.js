@@ -1,13 +1,14 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { ADD_TODO, UPDATE_TODO, DELETE_TODO } from "../../actions/todo";
 import { Icon } from "@iconify/react";
 import reduxIcon from "@iconify/icons-logos/redux";
-import { useTheme } from "@material-ui/core/styles";
 
 // material ui
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
+import { useTheme } from "@material-ui/core/styles";
 
 // components
 import AddTodo from "../AddTodo";
@@ -15,14 +16,30 @@ import TodoList from "../TodoList";
 
 const Redux = () => {
   const todos = useSelector((state) => state.todoState.todos);
+  const dispatch = useDispatch();
 
   const theme = useTheme();
 
-  const handleAdd = (todo) => {};
+  const handleAdd = (todo) => {
+    dispatch({
+      type: ADD_TODO,
+      payload: todo,
+    });
+  };
 
-  const handleUpdate = (id) => {};
+  const handleUpdate = (id) => {
+    dispatch({
+      type: UPDATE_TODO,
+      payload: id,
+    });
+  };
 
-  const handleDelete = (id) => {};
+  const handleDelete = (id) => {
+    dispatch({
+      type: DELETE_TODO,
+      payload: id,
+    });
+  };
 
   return (
     <Paper variant="outlined" style={{ padding: `${theme.spacing(2)}px` }}>
