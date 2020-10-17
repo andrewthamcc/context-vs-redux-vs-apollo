@@ -1,4 +1,4 @@
-# Redux vs Apollo Client for State Management
+# Context vs Redux vs Apollo Client for State Management
 
 An app built to demonstrate the differences between three state management solutions with React's Context, Redux and Apollo.
 
