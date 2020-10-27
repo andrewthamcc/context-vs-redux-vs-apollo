@@ -1,16 +1,24 @@
-import ApolloClient, { InMemoryCache } from "apollo-boost";
-import initialState from "../GraphQL/initialState";
-import TodoResolver from "../GraphQL/resolvers/todoResolver";
+import { ApolloClient, InMemoryCache, makeVar } from "@apollo/client";
+
+export const todosVar = makeVar([])
+
+const cache = new InMemoryCache({
+  typePolicies: {
+    Query: {
+      fields: {
+        todos: {
+          read() {
+            return todosVar()
+          }
+        }
+      }
+    }
+  }
+})
 
 const client = new ApolloClient({
-  cache: new InMemoryCache(),
-  resolvers: {
-    Mutation: {
-      ...TodoResolver,
-    },
-  },
+  cache,
+  connectToDevTools: true,
 });
-
-client.writeData({ data: { ...initialState } });
 
 export default client;

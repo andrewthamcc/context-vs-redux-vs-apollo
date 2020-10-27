@@ -6,7 +6,7 @@ class TodoState {
 
 const initialState = new TodoState();
 
-const uiReducer = (state = initialState, action) => {
+const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
       const newTodo = {
@@ -45,4 +45,4 @@ const uiReducer = (state = initialState, action) => {
   }
 };
 
-export default uiReducer;
+export default todoReducer;

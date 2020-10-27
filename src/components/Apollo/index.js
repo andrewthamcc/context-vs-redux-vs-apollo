@@ -1,6 +1,7 @@
 import React from "react";
-import { useQuery, useMutation } from "@apollo/react-hooks";
-import { GET_TODOS, ADD_TODO, UPDATE_TODO, DELETE_TODO } from "./query";
+import { useQuery } from "@apollo/client";
+import { GET_TODOS, useAddTodo, useUpdateTodo, useDeleteTodo } from "./query";
+import {todosVar} from "../../ApolloClient"
 import { Icon } from "@iconify/react";
 import apollostackIcon from "@iconify/icons-logos/apollostack";
 
@@ -16,22 +17,22 @@ import TodoList from "../TodoList";
 
 const Apollo = () => {
   const { data } = useQuery(GET_TODOS);
-  const [addTodo] = useMutation(ADD_TODO);
-  const [updateTodo] = useMutation(UPDATE_TODO);
-  const [deleteTodo] = useMutation(DELETE_TODO);
+  const addTodo = useAddTodo(todosVar);
+  const updateTodo = useUpdateTodo(todosVar);
+  const deleteTodo = useDeleteTodo(todosVar);
 
   const theme = useTheme();
 
   const handleAdd = (todo) => {
-    addTodo({ variables: { todo } });
+    addTodo(todo);
   };
 
   const handleUpdate = (id) => {
-    updateTodo({ variables: { id } });
+    updateTodo(id);
   };
 
   const handleDelete = (id) => {
-    deleteTodo({ variables: { id } });
+    deleteTodo(id);
   };
 
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import TodoContext from "./Context/TodoContext";
 import { Provider } from "react-redux";
 import store from "./redux";
-import { ApolloProvider } from "@apollo/react-hooks";
+import { ApolloProvider } from "@apollo/client";
 import client from "./ApolloClient";
 
 // material-ui
